@@ -1,4 +1,4 @@
-import { GetPuppies } from "../API/PuppyBowlApi"
+// import { GetPuppies } from "../API/PuppyBowlApi"
 
 const AllPlayers = ({players}) =>{
     return (
