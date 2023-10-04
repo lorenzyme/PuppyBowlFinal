@@ -25,7 +25,7 @@ useEffect(()=>{
 
   return (
     <>
-    <AllPlayers players={players}/>
+  
     <div id="container">
           <div id="navbar">
             
@@ -44,7 +44,7 @@ useEffect(()=>{
           </div>
           <div id="main-section">
             <Routes>
-              <Route path='/all' element={<AllPlayers/>} />
+              <Route path='/all' element={<AllPlayers players={players}/>} />
               <Route path='/new' element={<NewPlayerForm/>} />
               <Route path='/single' element={<SinglePlayer/>} />
               <Route path='/' element={<Home/>} />
