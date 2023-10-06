@@ -1,15 +1,32 @@
-import { useNavigate } from 'react-router-dom';
+import { useParams } from "react-router-dom"
+import { useState, useEffect } from "react"
 
-const SinglePlayer = () =>{
+const SinglePlayer = () => {
+    const [player, setPlayer] = useState({})
+    const { id } = useParams();
+    useEffect(()=>{
+      const GetPuppies = async () => {
+        const response = await fetch(`https://fsa-puppy-bowl.herokuapp.com/api/2109-UNF-HY-WEB-PT/players/${id}`)
+        const data = await response.json();
+        setPlayer(data.data.player)
+      }
+      GetPuppies();
+    },[])
 
-    const navigate = useNavigate();
+    
     
     return (
-        <div className="singlePlayer">
-            <h1>Single Players</h1>
-        </div>
-        
-    )
-}
+    <div className="title">
+        <h1 className="title">{ player.name }</h1>
 
-export default SinglePlayer
+        <img src={`${player.imageUrl}`} />
+ 
+        <h4 id="breed">Breed : {player.breed}</h4>
+        <h4 id="status"> Current Status : [{player.status}]</h4>
+        <h4> ID : {player.id}</h4>
+
+    </div>
+    )
+                
+}
+export default SinglePlayer;

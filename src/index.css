@@ -1,5 +1,5 @@
 * {
-  font-family: arial, sans-serif;
+  font-family: lato;
   margin: 0;
 }
 
@@ -65,29 +65,24 @@ body {
   border-radius: 10px;
 }
 
-.singlePlayer {
-  color: rgb(50, 50, 53);
 
+
+.title {
+  color: blueviolet;
+  width: 300px;
+  margin: 10px;
+  background-color: #ffffff73;
+  border: 1px solid #7a7a7a;
   border-radius: 10px;
-}
-
-.form {
-  color: rgb(50, 50, 53);
-
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position:relative;
+  transition: transform 0.3s;
   border-radius: 10px;
+  text-align: center;
 }
 
-.home {
-  color: rgb(50, 50, 53);
-
-  border-radius: 10px;
-}
-#homeText {
-  font-size: larger;
-}
 
 a {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -100,6 +95,9 @@ img {
 
 }
 
+p {
+  margin: 100px;
+}
 
 img:hover {
   transform: translateY(-5px);
@@ -115,22 +113,73 @@ img:hover {
 #breed {
 padding: 10px;
 color: rgb(155, 84, 155);
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #name{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
   color: blueviolet;
   font-size: xx-large;
 }
 
 #status{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: blueviolet;
  
 }
 
 button {
   margin: 10px;
+  padding: 10px;
+  font-size: larger;
+  color: #275db3;
+}
+
+#title {
+  color: blueviolet;
+}
+
+#homeImg {
+  width: 400px;
+}
+
+h1 {
+margin: 100px;
+color: blueviolet;
+}
+
+@font-face {
+  font-family: lato;
+  src: url(./assets/Lato-Regular.ttf);
+}
+
+.form {
+  display: flex;
+}
+
+input {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+#input-field {
+  color: blueviolet;
+  margin: 0 auto;
+}
+
+#field {
+  color: blueviolet;
+  width: 300px;
+  margin: 10px;
+  background-color: #ffffff73;
+  border: 1px solid #7a7a7a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position:relative;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#checkbox {
+  margin: 0 auto;
 }
