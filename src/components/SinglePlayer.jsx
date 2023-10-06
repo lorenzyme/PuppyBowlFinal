@@ -22,7 +22,7 @@ const SinglePlayer = () => {
         <img src={`${player.imageUrl}`} />
  
         <h4 id="breed">Breed : {player.breed}</h4>
-        <h4 id="status"> Current Status : [{player.status}]</h4>
+        <h4 id="status"> Current Status : [{player.status}]<p/></h4>
         <h4> ID : {player.id}</h4>
 
     </div>

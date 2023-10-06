@@ -22,11 +22,12 @@ const SearchResults = ({players}) => {
     return (
         
         <div>
-            <div>
-                <p>
+            <div id="searchDiv">
+                <h1 id="search">
                     Player Search
-                </p>
+                </h1>
             <input
+                id="searchbox"
                 type="text"
                 placeholder='Search for a player'
                 value={searchInput}
